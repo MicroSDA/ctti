@@ -63,7 +63,7 @@ struct nameof_impl
     static constexpr ctti::detail::cstring apply()
     {
         return ctti::detail::filter_typename_prefix(ctti::pretty_function::type<T>().pad(
-            CTTI_TYPE_PRETTY_FUNCTION_LEFT,
+            CTTI_TYPE_PRETTY_FUNCTION_LEFT - 1,
             CTTI_TYPE_PRETTY_FUNCTION_RIGHT
         ));
     }
